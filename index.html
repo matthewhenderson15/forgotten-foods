@@ -130,7 +130,6 @@
     </div>
 
     <div class="stats">
-      <span id="pct-display">0% funded</span>
       <span id="remaining-display">$10,000 to go</span>
     </div>
 
@@ -168,9 +167,6 @@
 
         document.getElementById("amount-display").textContent =
           "$" + total.toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 });
-
-        document.getElementById("pct-display").textContent =
-          Math.round(pct) + "% funded";
 
         document.getElementById("remaining-display").textContent =
           "$" + remaining.toLocaleString("en-US") + " to go";
